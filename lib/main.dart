@@ -1,3 +1,4 @@
+import 'package:car_screens/features/homescreen.dart/presentation/bottom_navigation.dart';
 import 'package:car_screens/features/homescreen.dart/presentation/homescreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        home: const HomeScreen(),
+        home: const BottomNavigation(),
       ),
       designSize: const Size(414, 914),
     );

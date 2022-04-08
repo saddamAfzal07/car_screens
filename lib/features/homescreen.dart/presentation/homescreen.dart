@@ -17,41 +17,45 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0XFFE5E5E5),
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.white,
-        title: Container(
-          margin: EdgeInsets.symmetric(horizontal: 14.w),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              SvgPicture.asset(
-                "assets/images/Group.svg",
-                // fit: BoxFit.contain,
-              ),
-              Text(
-                "Home",
-                style: TextStyle(
-                  fontSize: 18.sp,
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              Row(
-                children: [
-                  SvgPicture.asset(
-                    "assets/images/notification.svg",
-                  ),
-                  SizedBox(
-                    width: 28.w,
-                  ),
-                  Image.asset("assets/images/Ellipse.png"),
-                ],
-              )
-            ],
-          ),
-        ),
-      ),
+      // appBar: AppBar(
+      //   elevation: 0,
+      //   backgroundColor: Colors.white,
+      //   title: Container(
+      //     // margin: EdgeInsets.symmetric(horizontal: 14.w),
+      //     child: Row(
+      //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //       children: [
+      //         SizedBox(
+      //           width: 92.w,
+      //           height: 23.h,
+      //           child: SvgPicture.asset(
+      //             "assets/images/Group.svg",
+      //             fit: BoxFit.contain,
+      //           ),
+      //         ),
+      //         Text(
+      //           "Home",
+      //           style: TextStyle(
+      //             fontSize: 18.sp,
+      //             color: Colors.black,
+      //             fontWeight: FontWeight.bold,
+      //           ),
+      //         ),
+      //         Row(
+      //           children: [
+      //             SvgPicture.asset(
+      //               "assets/images/notification.svg",
+      //             ),
+      //             SizedBox(
+      //               width: 28.w,
+      //             ),
+      //             Image.asset("assets/images/Ellipse.png"),
+      //           ],
+      //         )
+      //       ],
+      //     ),
+      //   ),
+      // ),
       body: Column(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -110,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             SizedBox(
-              height: 152,
+              height: 200.h,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 shrinkWrap: true,
@@ -121,8 +125,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Stack(
                       children: [
                         Container(
-                          height: 149,
-                          width: 120,
+                          // height: 149.h,
+                          width: 120.w,
                           decoration: BoxDecoration(
                               color: horizontalCars[index].bgcolors,
                               borderRadius: BorderRadius.circular(18)),
@@ -163,7 +167,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 21.w, bottom: 40.h),
+              padding: EdgeInsets.only(left: 21.w, bottom: 40.h, top: 40.h),
               child: Text(
                 "Available vehicles",
                 style: TextStyle(
